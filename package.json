@@ -1,0 +1,25 @@
+{
+  "name": "odev-1-ahmetseha",
+  "version": "1.0.0",
+  "description": "Ödev hazırlığı başladı",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodluyoruz-react-bootcamp/odev-1-ahmetseha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kodluyoruz-react-bootcamp/odev-1-ahmetseha/issues"
+  },
+  "homepage": "https://github.com/kodluyoruz-react-bootcamp/odev-1-ahmetseha#readme"
+}
