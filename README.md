@@ -1,1 +1,1 @@
-Ödev hazırlığı başladı
+"Kodluyoruz EarlyBird Front-end Bootcamp'i Ödev-1

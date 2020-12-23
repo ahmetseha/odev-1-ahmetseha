@@ -1,16 +1,13 @@
 {
-  "name": "odev-1-ahmetseha",
+  "name": "odev-1-ahmetseha-1",
   "version": "1.0.0",
-  "description": "Ödev hazırlığı başladı",
+  "description": "\"Kodluyoruz EarlyBird Front-end Bootcamp'i Ödev-1",
   "main": "index.js",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "nodemon": "^2.0.6"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+		"start": "node dist/app.js",
+		"dev": "nodemon src/app.js",
+		"build": "sucrase ./src -d ./dist --transforms imports"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kodluyoruz-react-bootcamp/odev-1-ahmetseha.git"
@@ -21,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/kodluyoruz-react-bootcamp/odev-1-ahmetseha/issues"
   },
-  "homepage": "https://github.com/kodluyoruz-react-bootcamp/odev-1-ahmetseha#readme"
+  "homepage": "https://github.com/kodluyoruz-react-bootcamp/odev-1-ahmetseha#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "sucrase": "^3.16.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
