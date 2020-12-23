@@ -12,4 +12,5 @@ export const getData = async (userId) => {
   catch (e) {
     console.log(e);
   }
-};
+}
+export default getData;

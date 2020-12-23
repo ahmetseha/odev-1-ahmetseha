@@ -4,12 +4,13 @@ const ENDPOINT = "https://jsonplaceholder.typicode.com";
 
  const getData = async (userId) => {
   try {
-    let { data: user } = await _axios2.default.get(`${ENDPOINT}/users/${userId}`);
-    let { data: posts } = await _axios2.default.get(`${ENDPOINT}/posts?userId=${userId}`);
+    const { data: user } = await _axios2.default.get(`${ENDPOINT}/users/${userId}`);
+    const { data: posts } = await _axios2.default.get(`${ENDPOINT}/posts?userId=${userId}`);
     const data = {...user,posts};
     return data;
   } 
   catch (e) {
     console.log(e);
   }
-}; exports.getData = getData;
+}; exports.getData = getData
+exports. default = exports.getData;
