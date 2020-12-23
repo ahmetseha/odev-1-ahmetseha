@@ -1,15 +1,15 @@
 import axios from 'axios';
 
-const ENDPOİNT = "https://jsonplaceholder.typicode.com";
+const ENDPOINT = "https://jsonplaceholder.typicode.com";
 
 export const getData = async (userId) => {
   try {
-    const { data: user } = await axios.get(ENDPOİNT + `/users/${userId}`);
-    const { data: posts } = await axios.get(ENDPOİNT + `/posts?userId=${userId}`);
+    let { data: user } = await axios.get(`${ENDPOINT}/users/${userId}`);
+    let { data: posts } = await axios.get(`${ENDPOINT}/posts?userId=${userId}`);
     const data = {...user,posts};
     return data;
   } 
-  catch (err) {
-    console.log(err);
+  catch (e) {
+    console.log(e);
   }
 };
